@@ -1,0 +1,65 @@
+{
+  "_from": "bulma-start",
+  "_id": "bulma-start@0.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-LJchFdLKUAavS4c8qELN+5FoOicttX8fi1+M2mLZQyf+ru8tcooqQ3j9kdJq1p/FeVyfOLi4vtXP1b3k4tQdtA==",
+  "_location": "/bulma-start",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "bulma-start",
+    "name": "bulma-start",
+    "escapedName": "bulma-start",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/bulma-start/-/bulma-start-0.0.3.tgz",
+  "_shasum": "cca27a954506fe59df137ea676045173aac54894",
+  "_spec": "bulma-start",
+  "_where": "/Users/jthomas/Desktop",
+  "author": {
+    "name": "Diego Lucena",
+    "email": "diego_lucena01@live.com"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Web App Lembrei-te",
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "autoprefixer": "^9.4.7",
+    "bulma": "^0.7.2",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^1.4.1",
+    "sass": "^1.23.7"
+  },
+  "keywords": [
+    "sass",
+    "bulma",
+    "css",
+    "start",
+    "task manager",
+    "web app"
+  ],
+  "license": "MIT",
+  "name": "lembrei-te",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mozz4rt/Lembrei-te.git"
+  },
+  "scripts": {
+    "dev": "parcel -p 3000 index.html"
+  },
+  "version": "0.0.3",
+  "dependencies": {
+    "bulma-divider": "^0.2.0",
+    "bulma-switch": "^2.0.0",
+    "bulma-utilities": "^0.3.6"
+  }
+}
