@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // console.log('aa');
+  console.log("hell");
 });

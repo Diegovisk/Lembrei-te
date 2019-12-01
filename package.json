@@ -31,14 +31,13 @@
   "deprecated": false,
   "description": "Web App Lembrei-te",
   "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
     "autoprefixer": "^9.4.7",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015-ie": "^6.7.0",
     "bulma": "^0.7.2",
-    "node-sass": "^4.11.0",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^6.1.1"
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^1.4.1",
+    "sass": "^1.23.7"
   },
   "keywords": [
     "sass",
@@ -55,19 +54,10 @@
     "url": "git+https://github.com/Mozz4rt/Lembrei-te.git"
   },
   "scripts": {
-    "css-build": "node-sass _sass/main.scss css/main.css",
-    "css-deploy": "npm run css-build && npm run css-postcss",
-    "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
-    "css-watch": "npm run css-build -- --watch",
-    "deploy": "npm run css-deploy && npm run js-build",
-    "js-build": "babel _javascript --out-dir lib",
-    "js-watch": "npm run js-build -- --watch",
-    "live-reload": "browser-sync start --config bs-config.js",
-    "start": "npm-run-all --parallel css-watch js-watch live-reload"
+    "dev": "parcel -p 3000 index.html"
   },
   "version": "0.0.3",
   "dependencies": {
-    "browser-sync": "^2.26.7",
     "bulma-divider": "^0.2.0",
     "bulma-switch": "^2.0.0",
     "bulma-utilities": "^0.3.6"
