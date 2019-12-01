@@ -1,1 +1,0 @@
-{"version":3,"sources":["_javascript/main.js"],"names":["document","addEventListener","console","log"],"mappings":"AAAAA,QAAQ,CAACC,gBAAT,CAA0B,kBAA1B,EAA8C,YAAM;AAClDC,EAAAA,OAAO,CAACC,GAAR,CAAY,MAAZ;AACD,CAFD","file":"main.9bb311fe.js","sourceRoot":"..","sourcesContent":["document.addEventListener('DOMContentLoaded', () => {\r\n  console.log(\"hell\");\r\n});\r\n"]}
