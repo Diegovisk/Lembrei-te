@@ -48,7 +48,7 @@
                         <div class="field">
                             <label class="label">Título do lembrete:</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="">
+                                <input class="input" type="text" id="name" placeholder="">
                             </div>
                         </div>
                         <div class="field">
@@ -59,13 +59,13 @@
                             <div class="field">
                                 <label class="label">Descrição:</label>
                                 <div class="control">
-                                    <textarea class="textarea" name="" id="" rows="2"></textarea>
+                                    <textarea class="textarea" name="" id="desc" rows="2"></textarea>
                                 </div>
                             </div>
                             <label class="label">Tarefas:</label>
                             <div class="field has-addons">
                                 <div class="control is-full-width">
-                                    <input class="input" type="text" placeholder="Nova tarefa">
+                                    <input class="input" type="text" id="tarefas" placeholder="Nova tarefa">
                                 </div>
                                 <div class="control">
                                     <a class="button is-info">
@@ -109,9 +109,18 @@
         </div>
     </section>
     <script async defer type="text/javascript" src="lib/external/fa-all.js"></script>
-    <script src="bulma-toast.min.js"></script>
     <script type="text/javascript" src="lib/external/masonry.js"></script>
     <script type="text/javascript" src="lib/main.js"></script>
     <script type="text/javascript" src="lib/view/lembretes.js"></script>
+    <script src="lib/model/categoria.js"></script>
+    <script src="lib/model/lembrete.js"></script>
+    <script>
+        let name = document.querySelector('#name');
+        let desc = document.querySelector('#desc');
+        let tarefas = document.querySelector('#tarefas');
+
+        let lembrete1=new Lembrete(name,desc,tarefas,'ativo')
+        console.log(lembrete1)
+    </script>
 </body>
 </html>

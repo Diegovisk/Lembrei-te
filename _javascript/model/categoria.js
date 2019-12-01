@@ -14,11 +14,11 @@ class Categoria{
     get cor(){
         return this._cor;
     }
-    set _slug(){
+    sslug(nome){
         var hash = 0, i, chr;
-        if (this._nome.length === 0) this._slug=hash;
+        if (nome.length === 0) this._slug=hash;
         for (i = 0; i < this.length; i++) {
-            chr   = this._nome.charCodeAt(i);
+            chr   = nome.charCodeAt(i);
             hash  = ((hash << 5) - hash) + chr;
             hash |= 0;
         }
